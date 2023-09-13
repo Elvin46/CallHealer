@@ -62,7 +62,7 @@ select{
         position: relative;
         display: flex;
         justify-content: center;
-        .container{
+        .container-md{
             position: absolute;
             top: -100px;
         }
@@ -491,7 +491,7 @@ select{
             }
         }
         .home{
-            .container{
+            .container-md{
                 top: 0px;
             }
         }

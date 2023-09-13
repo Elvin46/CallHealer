@@ -62,7 +62,7 @@ select {
   display: flex;
   justify-content: center;
 }
-#main .home .container {
+#main .home .container-md {
   position: absolute;
   top: -100px;
 }
@@ -476,7 +476,7 @@ select {
   #main .heading .info {
     flex-direction: column;
   }
-  #main .home .container {
+  #main .home .container-md {
     top: 0px;
   }
   .location {
