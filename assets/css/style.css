@@ -1,0 +1,289 @@
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+.navbar {
+  background-color: #03ADAA;
+}
+.navbar .navbar-nav {
+  display: flex;
+  flex-direction: row;
+}
+.navbar .navbar-nav .nav-link {
+  padding: 0 15px;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+}
+.navbar .navbar-nav .nav-link svg {
+  margin-right: 13px;
+}
+.navbar .navbar-nav .nav-link.mid {
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+}
+
+#main .main-bg {
+  background-color: #F3F3F3;
+  padding: 25px 0;
+  height: 210px;
+}
+#main .main-bg .heading h5 {
+  font-size: 33px;
+  font-weight: 700;
+  margin: 0 20px 0 0;
+}
+#main .main-bg .heading .info {
+  align-items: center;
+}
+#main .main-bg .heading .info p {
+  margin: 0;
+  color: #444444;
+}
+#main .main-bg .heading .info .stars {
+  display: flex;
+  margin: 0 13px;
+}
+#main .main-bg .heading .info .stars a {
+  transition: 0.6s;
+  color: #bfbdbd;
+  margin: 1px;
+}
+#main .main-bg .heading .info .stars a.active {
+  color: #FF8A00;
+}
+#main .home {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+#main .home .container {
+  position: absolute;
+  top: -100px;
+}
+#main .home .menu {
+  background-color: white;
+  border: 1px solid #D9D9D9;
+  display: flex;
+}
+#main .home .menu .col-3 {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+#main .home .menu .col-3:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  height: 22px;
+  width: 1px;
+  background-color: #D9D9D9;
+  right: 0;
+}
+#main .home .menu .col-3:first-child button {
+  color: #03ADAA;
+}
+#main .home .menu .col-3 button {
+  height: 50px;
+  width: 100%;
+  border: none;
+  color: #555555;
+  font-size: 13px;
+  background-color: white;
+}
+#main .home .menu .col-3 button:hover {
+  color: #03ADAA;
+}
+#main .home .tab-btn.selected {
+  color: #03ADAA;
+}
+#main .home .left-side .slider {
+  position: relative;
+  overflow: hidden;
+}
+#main .home .left-side .slider .slides {
+  width: 900%;
+  display: flex;
+}
+#main .home .left-side .slider .slides input {
+  display: none;
+}
+#main .home .left-side .slider .slides .slide {
+  height: 400px;
+  width: 11.1111111111%;
+  transition: 0.4s;
+}
+#main .home .left-side .slider .slides .slide img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#main .home .left-side .slider .slides #radio1:checked ~ .first {
+  margin-left: 0;
+}
+#main .home .left-side .slider .slides #radio2:checked ~ .first {
+  margin-left: -11.1111111111%;
+}
+#main .home .left-side .slider .slides #radio3:checked ~ .first {
+  margin-left: -22.2222222222%;
+}
+#main .home .left-side .slider .slides #radio4:checked ~ .first {
+  margin-left: -33.3333333333%;
+}
+#main .home .left-side .slider .navigation-manual {
+  position: absolute;
+  width: 100%;
+  margin-top: -40px;
+  display: flex;
+  justify-content: center;
+}
+#main .home .left-side .slider .navigation-manual .manual-btn {
+  background-color: white;
+  padding: 6px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+#main .home .left-side .slider .navigation-manual .manual-btn:not(:last-child) {
+  margin-right: 6px;
+}
+#main .home .left-side .slider .navigation-manual .manual-btn:hover {
+  background-color: #03ADAA;
+}
+#main .home .left-side .title {
+  display: inline-block;
+  color: #444444;
+  font-weight: 600;
+  font-size: 25px;
+  margin: 35px 0;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #03ADAA;
+}
+#main .home .left-side p {
+  font-size: 18px;
+  font-weight: 500;
+}
+#main .home .left-side .about-img {
+  width: 100%;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-top: 40px;
+}
+#main .home .about .location {
+  margin-top: 44px;
+  font-size: 18px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+#main .home .about .location span {
+  height: 10px;
+  width: 10px;
+  background-color: #03ADAA;
+  border-radius: 10px;
+  margin-right: 12px;
+}
+#main .home .promotion {
+  display: none;
+}
+#main .home .promotion .location {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 600;
+}
+#main .home .promotion .location span {
+  margin-right: 10px;
+  margin-bottom: 4px;
+}
+#main .home .promotion .location_first {
+  margin-top: 54px;
+}
+#main .home .promotion .employee-card .card-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#main .home .promotion .employee-card .employee-name {
+  margin-top: 20px;
+  font-size: 20px;
+  color: #333333;
+  font-weight: 600;
+}
+#main .home .promotion .employee-card p {
+  font-size: 15px;
+  color: #444444;
+  font-weight: 600;
+  margin: 0;
+}
+#main .home .before-after {
+  display: none;
+}
+#main .home .comment {
+  display: none;
+}
+#main .home .comment .form-group {
+  text-align: left;
+}
+#main .home .comment .form-group label {
+  font-size: 13px;
+  color: #555555;
+}
+#main .home .comment .stars {
+  display: flex;
+  margin: 0 13px;
+  justify-content: center;
+}
+#main .home .comment .stars a {
+  transition: 0.6s;
+  color: #bfbdbd;
+  margin: 1px;
+}
+#main .home .comment .stars a.active {
+  color: #FF8A00;
+}
+#main .home .contact-form {
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #D9D9D9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#main .home .contact-form h3 {
+  font-size: 18px;
+  color: #555555;
+  font-weight: 500;
+}
+#main .home .contact-form form {
+  width: 100%;
+  text-align: center;
+}
+#main .home .contact-form form .form-group {
+  margin: 6px 0;
+}
+#main .home .contact-form form .form-group * {
+  color: #555555;
+  font-weight: 600;
+  font-size: 13px;
+}
+#main .home .contact-form form .form-group .form-check {
+  text-align: left;
+}
+#main .home .contact-form form button {
+  padding: 10px 35px;
+  font-size: 15px;
+  background-color: #03ADAA;
+  outline: none;
+  border: none;
+  font-weight: 600;
+}
+
+.left {
+  margin-right: 30px;
+}
