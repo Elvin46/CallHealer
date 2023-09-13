@@ -9,7 +9,29 @@ stars.forEach((item, index1) => {
     })
 })
 /////////////////////////////
+// SLIDER
+var indexValue = 1;
+ShowImg(indexValue);
+function Slide(e){ShowImg(indexValue = e);}
+function SideSlide(e){ShowImg(indexValue += e);}
+function ShowImg(e){
+    var i;
+    const img = document.querySelectorAll(".slider_img");
+    const sliders = document.querySelectorAll(".btn-sliders span");
+    if (e > img.length) {indexValue = 1;}
+    if (e < 1) {indexValue = img.length;}
+    for (let i = 0; i < img.length; i++) {
+        img[i].style.display = 'none';
+    }
+    for (let i = 0; i < sliders.length; i++) {
+        sliders[i].style.background = 'white';
+    }
+    img[indexValue-1].style.display = 'block';
+    sliders[indexValue-1].style.background = '#03ADAA';
+}
 
+
+/////////////////////////////
 // MENU
 var btn_about = document.querySelector("#AboutBtn");
 var btn_promotion = document.querySelector("#PromotionBtn");
